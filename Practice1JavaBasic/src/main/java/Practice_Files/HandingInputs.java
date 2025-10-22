@@ -12,8 +12,9 @@ public class HandingInputs {
 		driver.get("https://letcode.in/edit");
 		driver.findElement(By.id("fullName")).sendKeys("Aahil");
 		driver.findElement(By.id("join")).sendKeys("Is in 5th", Keys.TAB);
-		driver.findElement(By.id("getMe"));
-		
+		//driver.findElement(By.id("getMe")).getAttribute("value");
+		String s=	driver.findElement(By.id("getMe")).getDomProperty("value");
+		System.out.println(s);
 		
 	}
 

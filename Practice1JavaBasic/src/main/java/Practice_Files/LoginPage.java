@@ -15,6 +15,8 @@ public class LoginPage {
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://www.flipkart.com/");
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
 		//WebElement Login = driver.findElement(By.className("_1krdK5 vbCXhM"));
 		//Login.click();
 		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));

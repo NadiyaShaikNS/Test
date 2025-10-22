@@ -60,7 +60,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 	        action.moveToElement(Furniture).moveToElement(beds).click().perform();*/
 	        
 	        WebElement furniture = wait.until(ExpectedConditions
-	                .visibilityOfElementLocated(By.xpath("//img[@alt='Furniture']")));
+	                .visibilityOfElementLocated(By.xpath("//span[contains(text(),'Furniture')]")));
 
 	        // Hover over Furniture
 	        action.moveToElement(furniture).perform();
