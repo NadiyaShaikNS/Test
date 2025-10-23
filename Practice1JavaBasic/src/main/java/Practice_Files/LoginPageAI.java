@@ -31,7 +31,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 	        // Wait for the login popup to appear
 	        WebElement emailInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@class='r4vIwl BV+Dqf']")));
-	        emailInput.sendKeys("7386111687");
+	        emailInput.sendKeys("");
 	        
 	        // Enter your email and password
 	        
